@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Daftar Tugas</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Daftar Tugas</h1>
+        <form id="FormTugas">
+            <input type="text" id="InputTugas" placeholder="Masukkan tugas baru" required>
+            <button type="submit">Tambah</button>
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tanggal</th>
+                    <th>Tugas</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+            <tbody id="ListTugas"></tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
